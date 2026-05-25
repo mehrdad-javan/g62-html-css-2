@@ -4,113 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS</title>
-    <!--
     <link rel="stylesheet" href="style.css">
-    -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f0f2f5;
-            color: #292929;
-        }
-
-        header {
-            background-color: #1a73e8;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 12px;
-        }
-
-        nav a {
-            color: #e8f0fe;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            color: #c80000;
-        }
-
-        section {
-            background: white;
-            margin: 30px 0;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        #profile {
-            border-top: 5px solid #1a73e8;
-        }
-
-        #courses {
-            border-top: 5px solid #34a853;
-        }
-
-        #register {
-            border-top: 5px solid #fbbc05;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse; /* Merges borders */
-            margin-top: 15px;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
-
-        th {
-            background-color: #f8f9fa;
-            color: #1a73e8;
-        }
-
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-
-        button {
-            background-color: #34a853;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #2d8e47;
-        }
-
-
-        .main {
-            background-color: #f0f2f5;
-        }
-    </style>
 </head>
 <body>
 
@@ -188,9 +82,44 @@
 </main>
 
 
-<!-- 5. Footer -->
-<footer>
-    <p> &copy; 2026 Lexicon Växjö G62</p>
+<!-- 5. Footer Section -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__row">
+            <!-- About Column -->
+            <div class="footer__col">
+                <h3 class="footer__title">About Lexicon</h3>
+                <p class="footer__text">
+                    Lexicon Växjö G62 is a dedicated group of students learning modern web technologies to build the future of the web.
+                </p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="footer__col">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#profile" class="footer__link">Student Profile</a></li>
+                    <li class="footer__list-item"><a href="#courses" class="footer__link">Current Courses</a></li>
+                    <li class="footer__list-item"><a href="#register" class="footer__link">Course Registration</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact/Support Column -->
+            <div class="footer__col">
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">Help Center</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Terms of Service</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 Lexicon Växjö G62. All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
 
