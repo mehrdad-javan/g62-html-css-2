@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS</title>
+    <!--
+    <link rel="stylesheet" href="style.css">
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #292929;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        nav a {
+            color: #e8f0fe;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #c80000;
+        }
+
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #profile {
+            border-top: 5px solid #1a73e8;
+        }
+
+        #courses {
+            border-top: 5px solid #34a853;
+        }
+
+        #register {
+            border-top: 5px solid #fbbc05;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merges borders */
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #1a73e8;
+        }
+
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #34a853;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #2d8e47;
+        }
+
+
+        .main {
+            background-color: #f0f2f5;
+        }
+    </style>
 </head>
 <body>
 
+<!-- 1. Header Section -->
 <header>
     <h1>Lexicon Student Portal</h1>
     <nav>
@@ -16,7 +124,8 @@
     </nav>
 </header>
 
-<main>
+<main class="main">
+    <!-- 2. Profile Info -->
     <section id="profile">
         <h2>Student Profile</h2>
         <img src="https://placehold.co/150x150" alt="Student Photo">
@@ -24,9 +133,10 @@
         <p><strong>Bio:</strong> Aspiring Full-Stack Developer learning HTML, CSS, and Git.</p>
     </section>
 
-    <hr />
+    <hr/>
 
-    <section>
+    <!-- 3. Course Table -->
+    <section id="courses">
         <h2>Current Courses</h2>
         <table border="1">
             <thead>
@@ -51,6 +161,7 @@
         </table>
     </section>
 
+    <!-- 4. Registration Form -->
     <section id="register">
         <h2>Register for a New Course</h2>
         <form action="#" method="POST">
@@ -77,11 +188,10 @@
 </main>
 
 
-
+<!-- 5. Footer -->
 <footer>
     <p> &copy; 2026 Lexicon Växjö G62</p>
 </footer>
-
 
 
 </body>
