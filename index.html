@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS</title>
 </head>
 <body>
-  <h1>HTML CSS</h1>
+
+<header>
+    <h1>Lexicon Student Portal</h1>
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#register">Register</a>
+    </nav>
+</header>
+
+<main>
+    <section id="profile">
+        <h2>Student Profile</h2>
+        <img src="https://placehold.co/150x150" alt="Student Photo">
+        <p><strong>Name:</strong> [Developer Name]</p>
+        <p><strong>Bio:</strong> Aspiring Full-Stack Developer learning HTML, CSS, and Git.</p>
+    </section>
+
+    <hr />
+
+    <section>
+        <h2>Current Courses</h2>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>WD101</td>
+                <td>Web Development Basics</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>JS202</td>
+                <td>JavaScript Fundamentals</td>
+                <td>In Progress</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="register">
+        <h2>Register for a New Course</h2>
+        <form action="#" method="POST">
+            <label for="student-name">Full Name:</label><br>
+            <input type="text" id="student-name" name="name" required><br><br>
+
+            <label for="course-select">Select Course:</label><br>
+            <select id="course-select" name="course">
+                <option value="react">React Advanced</option>
+                <option value="node">Node.js Backend</option>
+                <option value="python">Python for Data Science</option>
+            </select>
+            <br><br>
+
+            <p>Preferred Shift:</p>
+            <input type="radio" id="morning" name="shift" value="morning">
+            <label for="morning">Morning</label>
+            <input type="radio" id="evening" name="shift" value="evening">
+            <label for="evening">Evening</label><br><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+</main>
+
+
+
+<footer>
+    <p> &copy; 2026 Lexicon Växjö G62</p>
+</footer>
+
+
+
 </body>
 </html>
